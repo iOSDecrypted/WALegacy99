@@ -26,8 +26,8 @@ HOOK_FUNCTION(BOOL, WAIsPlatformDeprecated) {
     return NO;
 }
 
-HOOK_FUNCTION(void, WAShouldShowPlatformDeprecationNags) {
-    return;
+HOOK_FUNCTION(BOOL, WAShouldShowPlatformDeprecationNags) {
+    return NO;
 }
 
 HOOK_FUNCTION(NSDate *, WABuildDate) {

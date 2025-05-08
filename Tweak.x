@@ -31,8 +31,11 @@ HOOK_FUNCTION(BOOL, WAShouldShowPlatformDeprecationNags) {
 }
 
 HOOK_FUNCTION(NSDate *, WABuildDate) {
-    // return [NSDate dateWithTimeIntervalSinceNow:1746224449]; //25.14.7
-    return [NSDate date];
+    return [NSDate dateWithTimeIntervalSince1970:1746224450];
+}
+
+HOOK_FUNCTION(double, WABuildDateTimeInterval) {
+    return 1746224450.0;
 }
 
 HOOK_FUNCTION(NSDate *, WAAppExpirationDate) {
@@ -65,6 +68,7 @@ HOOK_FUNCTION(NSString *, WABuildHash) {
         {"_WAIsPlatformDeprecated", (void *)&_WAIsPlatformDeprecated, (void **)&_orig_WAIsPlatformDeprecated},
         {"_WAShouldShowPlatformDeprecationNags", (void *)&_WAShouldShowPlatformDeprecationNags, (void **)&_orig_WAShouldShowPlatformDeprecationNags},
         {"_WABuildDate", (void *)&_WABuildDate, (void **)&_orig_WABuildDate},
+        {"_WABuildDateTimeInterval", (void *)&_WABuildDateTimeInterval, (void **)&_orig_WABuildDateTimeInterval},
         {"_WAAppExpirationDate", (void *)&_WAAppExpirationDate, (void **)&_orig_WAAppExpirationDate},
         {"_WADeprecatedPlatformCutOffDate", (void *)&_WADeprecatedPlatformCutOffDate, (void **)&_orig_WADeprecatedPlatformCutOffDate},
         {"_WABuildVersion", (void *)&_WABuildVersion, (void **)&_orig_WABuildVersion},

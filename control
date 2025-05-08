@@ -1,6 +1,6 @@
 Package: com.dvntm.walegacy
 Name: WALegacy
-Version: 0.0.2
+Version: 0.0.3
 Architecture: iphoneos-arm
 Description: Provides legacy WhatsApp version support by spoofing as up-to-date
 Maintainer: dvntm

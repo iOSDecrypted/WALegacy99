@@ -47,7 +47,7 @@ HOOK_FUNCTION(NSDate *, WADeprecatedPlatformCutOffDate) {
 }
 
 HOOK_FUNCTION(NSString *, WABuildVersion, void *arg1, void *arg2) {
-    return @"2.25.14.77";
+    return @"2.99.99.99";
 }
 
 HOOK_FUNCTION(NSString *, WABuildHash) {
